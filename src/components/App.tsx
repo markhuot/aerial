@@ -27,7 +27,7 @@ export const App = () => {
 
     useEffect(() => {
         (async () => {
-            const response = await fetch("/videos");
+            const response = await fetch("/api/videos");
             const responseJson = await response.json();
             setVideos(responseJson);
         })();
