@@ -1,0 +1,32 @@
+<html>
+<head>
+    <title>Aerial</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .duration-5000 {
+            transition-duration: 5s;
+        }
+        [class*="filter-"] {
+            --tw-filter-opacity: 1;
+            --tw-filter-blur: 0;
+            filter: opacity(var(--tw-filter-opacity)) blur(var(--tw-filter-blur));
+        }
+        .filter-opacity-0 {
+            --tw-filter-opacity: 0;
+        }
+        .filter-opacity-100 {
+            --tw-filter-opacity: 1;
+        }
+        .filter-blur-5 {
+            --tw-filter-blur: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="react-root"></div>
+    <script src="main.js" type="module"></script>
+</body>
+</html>
